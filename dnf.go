@@ -1,5 +1,10 @@
 package dnf
 
-func toDNF(s string) string {
-    return s
+import (
+	"strings"
+)
+
+func ToDNF(s string) string {
+	s = strings.Replace(s, " ", "", -1)
+	return s
 }
